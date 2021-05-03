@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ starts Flask """
 
-from flash import Flask, escape, request
+from flask import Flask, escape, request
 app = Flask(__name__)
 
 
