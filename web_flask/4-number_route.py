@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def index():
+def hello_hbnb():
     """ return Hello HBNB! """
     return 'Hello HBNB!'
 
@@ -18,9 +18,10 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def c():
+def c(text):
     """ return C """
-    return 'C'
+    replace = text.replace("_", " ")
+    return 'C {}'.format(text)
 
 
 @app.route('/python/(<text>)', strict_slashes=False)
