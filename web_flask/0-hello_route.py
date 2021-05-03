@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """ starts Flask """
 
-from flash import Flask
+from flash import Flask, escape, request
 app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def index():
+def hello_hbnb():
     """ return Hello HBNB! """
     return 'Hello HBNB!'
 
-
-app.run(host='0.0.0.0', port='5000')
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port='5000')
