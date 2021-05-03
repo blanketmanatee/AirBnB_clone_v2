@@ -63,8 +63,7 @@ class DBStorage:
             self.__session.delete(obj)
 
     def reload(self):
-        """
-        reload method
+        """ reload method
         creates all tables in the database
         creates the current database session (self.__session)
         from the engine (self.__engine) by using a sessionmaker -
