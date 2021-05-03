@@ -1,8 +1,4 @@
-@app.route('/c/<text>', strict_slashes=False)
-def c(text):
-    """ return C """
-    replace = text.replace("_", " ")
-    return 'C {}'.format(text)#!/usr/bin/python3
+#!/usr/bin/python3
 """ starts Flask """
 
 from flask import Flask, escape, request
